@@ -31,12 +31,6 @@ export default function HomeScreen() {
           <Text style={styles.getStartedText}>a digital companion</Text>
         </View>
       </ScrollView>
-
-      <View style={styles.tabBarInfoContainer}>
-        <Text style={styles.tabBarInfoText}>
-          get started
-        </Text>
-      </View>
     </View>
   );
 }
@@ -44,12 +38,6 @@ export default function HomeScreen() {
 HomeScreen.navigationOptions = {
   header: null,
 };
-
-function handleHelpPress() {
-  WebBrowser.openBrowserAsync(
-    'https://docs.expo.io/versions/latest/workflow/up-and-running/#cant-see-your-changes'
-  );
-}
 
 const styles = StyleSheet.create({
   container: {
